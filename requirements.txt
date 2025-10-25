@@ -1,0 +1,13 @@
+numpy
+scipy
+opencv-python
+pillow
+imageio
+tqdm
+pyyaml
+matplotlib
+face-alignment
+gfpgan
+onnxruntime-gpu
+fastapi
+uvicorn

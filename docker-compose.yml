@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  sadtalker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sadtalker-gpu
+    restart: unless-stopped
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+      - MODELS_DIR=/models
+      - TALKING_HEAD_SERVICE_TOKEN=[my-secret-token]
+
+    volumes:
+      - ./models:/models
+      - ./data:/app/data
+
+    ports:
+      - "2266:2266"
+
+    # ✅ Added pre-start permission fix here
+    entrypoint: >
+      bash -c "
+      echo '🔧 Fixing directory permissions...' &&
+      chown -R 1000:1000 /app/data /models || true &&
+      chmod -R 777 /app/data /models || true &&
+      if [ ! -d /models/checkpoints ]; then
+        echo '🔽 Models not found — downloading SadTalker pretrained weights...';
+        cd /app && python3 scripts/download_models.py --path /models || true;
+      fi &&
+      echo '🚀 Starting SadTalker FastAPI server...' &&
+      uvicorn server:app --host 0.0.0.0 --port 2266
+      "
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2266/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
