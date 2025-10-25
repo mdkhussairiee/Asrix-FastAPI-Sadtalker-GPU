@@ -6,7 +6,7 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ## 🧩 Sample
 
-<video  src="docs/ORT2266_output.mp4" type="video/mp4"> </video>
+<video  src="docs/ORT2266_output.mp4" type="video/mp4" width='100%'> </video>
 
 ---
 
