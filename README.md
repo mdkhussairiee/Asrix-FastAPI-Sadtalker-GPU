@@ -6,7 +6,7 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ### 🎬 Demo Video
 
-- Available at: **https://github.com/mdkhussairiee/Asrix-Labs-FastAPI-Sadtalker/blob/main/docs/8673ecea-d850-44f2-9c3a-9142dfb935ca.mp4**
+- Available at: **https://studio.orient-telecoms.com/demo/8673ecea-d850-44f2-9c3a-9142dfb935ca.mp4**
 
 ---
 
