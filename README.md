@@ -4,9 +4,9 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ---
 
-## 🧩 Sample
+### 🎬 Demo Video
 
-<video  src="blob:http://103.251.1.194:2266/8673ecea-d850-44f2-9c3a-9142dfb935ca" type="video/mp4" width='400'> </video>
+<video src="https://studio.orient-telecoms.com/demo/ORT2266_output.mp4" controls width="640"></video>
 
 ---
 
