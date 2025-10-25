@@ -155,6 +155,6 @@ Response:
 
 ## 🧑‍💻 Author
 
-Asrix Studio – AI Video & Avatar Systems  
-**Website:** [https://asrix-studio.com](https://asrix-studio.com)
+Asrix AI Labs – AI Video & Avatar Systems  
+**Website:** [https://asrix.com](https://asrix.com)
 
