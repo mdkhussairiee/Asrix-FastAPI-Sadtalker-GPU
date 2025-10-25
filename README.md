@@ -6,7 +6,7 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ## 🧩 Sample
 
-<video  src="https://github.com/mdkhussairiee/Asrix-Labs-FastAPI-Sadtalker/blob/main/docs/ORT2266_output.mp4" type="video/mp4" width='400'> </video>
+<video  src="blob:http://103.251.1.194:2266/8673ecea-d850-44f2-9c3a-9142dfb935ca" type="video/mp4" width='400'> </video>
 
 ---
 
