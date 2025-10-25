@@ -4,7 +4,7 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ---
 
-### 🎬 Demo Video
+### 🎬 Sample Video
 
 - Available at: **https://private.asrix.com/8673ecea-d850-44f2-9c3a-9142dfb935ca.mp4**
 
