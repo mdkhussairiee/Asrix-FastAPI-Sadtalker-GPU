@@ -6,7 +6,10 @@ A GPU-accelerated FastAPI microservice that generates talking-head videos from s
 
 ### 🎬 Demo Video
 
+```
 <video src="docs/8673ecea-d850-44f2-9c3a-9142dfb935ca.mp4" controls height="640"></video>
+
+```
 
 ---
 
